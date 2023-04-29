@@ -1,0 +1,9 @@
+version: "3.2"
+services:
+  rabbitmq_study:
+    container_name: rabbitmq_study
+    image: rabbitmq:3-management-alpine
+    restart: always
+    ports:
+      - 5672:5672
+      - 8080:15672
